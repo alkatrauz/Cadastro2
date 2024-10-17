@@ -1,0 +1,83 @@
+/* Reset e estilo básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #3b3b3b, #b8c6db);
+}
+
+/* Estilo do container */
+.container {
+  width: 400px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  text-align: center;
+}
+
+/* Título */
+h1 {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 28px;
+}
+
+/* Inputs e botão */
+input {
+  width: calc(100% - 20px);
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Cor do placeholder mais visível */
+input::placeholder {
+  color: #ffffff; /* Cor do placeholder */
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8fd3f4;
+  color: #333;
+}
+
+/* Estilo da tabela */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.2);
+}
