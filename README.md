@@ -1,18 +1,15 @@
 # Cadastro2
-let formulario = document.getElementById('form-cadastro');
-Seleciona o formulário pelo ID para acessarmos seus campos e manipulá-lo.
 
-let tbody = document.querySelector('#tabela-cadastros tbody');
-Seleciona o <tbody> da tabela, onde adicionaremos as novas linhas.
+1)cria uma variavel chamada formulario, onde é armazenado o id formulario, e conseguir acessar.
 
-formulario.querySelector('button').onclick = function() { ... }
-Adiciona um evento de clique ao botão. A função que será executada é definida aqui.
+2)cria uma variavel chamada tbody, que é armazenada a parte da tabela onde os cadastro vao aparecer. E ali q vai ser jogada as novas linhas
 
-let linha = document.createElement('tr');
-Cria a variavel linha e armazena um novo elemento <tr>, linha da tabela.
+3)pega a variavel formulario e cria uma funcao onlick, que quando for clicada sera executada.
 
-linha.innerHTML = <td>${formulario.nome.value}</td><td>${formulario.email.value}</td>;
-Preenche a linha com duas células (<td>), uma para o nome e outra para o email.
+4)cria uma variavel chamada nome, o comando pega o valor que a pessoa digitou no "nome" e guarda
 
-tbody.innerHTML += linha.outerHTML;
-Converte a linha completa em HTML e adiciona ao final do <tbody>.
+5)cria uma variavel chamada email, faz a mesma coisa soque com o "email"
+
+6)aquie ele cria uma linha nova na tabela, ja com as informacoes do nome e email, onde é colocada dentro do <tbody>
+
+7)aqui ele limpa os campos do formulario.
